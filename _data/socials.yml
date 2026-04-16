@@ -1,13 +1,9 @@
 # Social links for Yuhan Jing's academic website
-# See https://github.com/george-gca/jekyll-socials for supported keys
 email: Frankjing420@163.com
 github_username: FrankJing420
 scholar_userid: E3LUVdQAAAAJ
-bilibili:
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bilibili_square_icon.svg/32px-Bilibili_square_icon.svg.png
-  title: Bilibili
-  url: https://space.bilibili.com/1075802443
+bilibili_id: 1075802443
 xiaohongshu:
-  logo: https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/xiaohongshu.svg
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Xiaohongshu_Logo_%28little_red_book%29.svg/32px-Xiaohongshu_Logo_%28little_red_book%29.svg.png
   title: 小红书
   url: https://www.xiaohongshu.com/user/profile/669cbbc30000000024020068
