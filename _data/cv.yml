@@ -1,189 +1,109 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Yuhan Jing (井宇涵)
+  label: Undergraduate Researcher
+  email: Frankjing420@163.com
+  location: Xi'an, Shaanxi, China
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Undergraduate student at the School of Mechanical Engineering, Xi'an Jiaotong University (Yuejie Honors Class). My research focuses on low-count noise denoising in fluorescence microscopy imaging, with particular interest in self-supervised learning combined with physics-based modeling. I also have experience in deep reinforcement learning for combinatorial optimization and LLM-based intelligent systems.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: FrankJing420
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: Xi'an Jiaotong University
+        location: Xi'an, Shaanxi, China
+        url: https://www.xjtu.edu.cn/
+        area: Mechanical Engineering (Yuejie Honors Class / 越杰班)
+        studyType: B.Eng.
+        start_date: 2023-09
+        end_date: present
+        score: "GPA: 4.02/4.3 &nbsp;|&nbsp; Average: 92.84/100 &nbsp;|&nbsp; Rank: 4/307 (freshman year)"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "**Key Courses:** Theoretical Mechanics (95), Linear Algebra & Analytic Geometry (96), University Physics (98), Mechanics of Materials (98)"
+          - "**Honors:** Outstanding Student Cadre, Outstanding Class President — Xi'an Jiaotong University"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+    Research Experience:
+      - company: "Decoupling Numerical and Structural Parameters: An Empirical Study on Adaptive Genetic Algorithms via Deep Reinforcement Learning for the Large-Scale TSP"
+        position: "Second Author &nbsp;|&nbsp; WCCI/CEC 2026 (accepted)"
+        location: Xi'an Jiaotong University
+        start_date: 2025-05
+        end_date: 2026-02
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Constructed a **Dual-Level DRLGA** control framework integrating Recurrent PPO and LSTM temporal modeling, achieving the mapping from non-Markovian evolutionary states to adaptive strategies."
+          - "Designed a numerical–structural parameter **decoupling and self-constraining logic**, enabling intelligent agents to dynamically coordinate Population Size and multi-mode operator switching (Mode Switching), accelerated via Numba JIT."
+          - "Achieved **Zero-Shot generalization** on TSPLIB real-world datasets (up to 5,915 nodes), resolving premature convergence in high-dimensional search spaces."
+          - "**45% reduction** in Optimality Gap on the largest instance (rl5915); optimality deviation compressed to the 0.9% range, demonstrating the decisive role of Structural Plasticity in automated algorithm design."
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: "LLM-Based Intelligent Manufacturing Process Design — Prof. Zheng Shuai, XJTU"
+        position: Research Assistant
+        location: Xi'an Jiaotong University
+        start_date: 2025-05
+        end_date: 2025-08
         highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Built a **CAD redesign agent** leveraging RAG technology: automatically loads user-specified CAD drawings, retrieves drawing and process knowledge bases, and performs intelligent parsing and geometric parameter extraction (circles, rectangles, etc.)."
+          - "Implemented automated parameter modification, CAD reconstruction, new design version generation, and parametric metadata updates — enabling fully automated incremental design data updating."
 
     Awards:
-      - title: Nobel Prize in Physics
+      - title: National Mathematical Modeling Contest (高教社杯) — National Second Prize
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+          - "Higher Education Press Cup (undergraduate division)"
+        date: 2025-11
+        awarder: Chinese Society for Industrial and Applied Mathematics
+        summary: "Led the team as captain; formulated and edited the solution for Problem C. Applied natural spline regression to model the relationship between maternal features and fetal Y-chromosome concentration vs. gestational age; used decision trees to partition optimal BMI intervals; employed Bootstrap, cross-validation, SMOTE, and LASSO regression to determine safe NIPT testing windows across different BMI conditions."
 
-      - title: Max Planck Medal
+      - title: MCM/ICM — Meritorious Winner (M Prize)
         authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          - "COMAP Mathematical Contest in Modeling"
+        date: 2025-01
+        awarder: COMAP
+        summary: "Led mathematical modeling of a sustainable tourism system for Juneau, AK. Built an Entropy-AHP multi-criteria decision framework; designed a nonlinear programming model with linear-weighted scalarization; used MATLAB SQP to achieve Pareto improvement at the critical threshold of 1.7×10⁶ visitors/year. Performed robustness testing via parameter perturbation (5% perturbation → 9.97% objective fluctuation) and successfully migrated the model to Denver."
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - title: National Undergraduate Mathematics Competition — School Second Prize
+        date: 2025-07
+        awarder: Xi'an Jiaotong University
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - title: MCM/ICM School Selection — Second Prize
+        date: 2025-01
+        awarder: Xi'an Jiaotong University
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+    Student Activities:
+      - company: Mathematical Modeling Club, Xi'an Jiaotong University
+        position: President
+        location: Xi'an, China
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - "Manage overall club operations; organized **10 academic lectures**; led compilation of internal training materials for 2023–2024 and 2024–2025."
+          - "Coordinated **69 competition events**; main operator of the club's WeChat public account (12 articles published)."
+
+      - company: Yuejie Honors Class (越杰班), School of Mechanical Engineering, XJTU
+        position: Class President
+        location: Xi'an, China
+        start_date: 2024-09
+        end_date: 2025-09
+        highlights:
+          - "Managed day-to-day class affairs; awarded **Outstanding Class President** by Xi'an Jiaotong University."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming
+        level: Proficient
+        icon: fa-solid fa-code
+        keywords: "Python, C, C++, Machine Learning, Data Structures & Algorithms, VSCode / Cursor"
+
+      - name: Technical Writing
+        level: Proficient
+        icon: fa-solid fa-file-alt
+        keywords: "LaTeX, Microsoft Office — authored and typeset 5 mathematical modeling papers"
+
+      - name: Research Tools
+        icon: fa-solid fa-flask
+        keywords: "MATLAB (SQP optimization), Numba JIT, RAG / LLM systems, PyTorch"
 
     Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Chinese
+        summary: "Native"
 
       - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+        summary: "Proficient — CET-6: 602 &nbsp;|&nbsp; TOEFL: 103 (Writing: 28)"
