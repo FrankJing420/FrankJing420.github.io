@@ -1,0 +1,256 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
+title: blank                          # 留空则自动使用全名
+first_name: Yuhan
+middle_name:
+last_name: Jing
+email: Frankjing420@163.com
+description: >
+  Undergraduate researcher at Xi'an University,
+  focusing on low-count noise denoising in microscopy imaging
+  via physics-aware self-supervised learning.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+  with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+keywords: >
+  microscopy, denoising, self-supervised learning,
+  two-photon imaging, confocal, MINFLUX, physics-based imaging
+lang: en
+icon: ⚛️
+
+# 将 FrankJing420 替换为你实际的 GitHub 用户名
+url: https://FrankJing420.github.io
+baseurl: ""
+last_updated: false
+
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+
+repo_theme_light: default
+repo_theme_dark: dark
+repo_trophies:
+  enabled: true
+  theme_light: flat
+  theme_dark: gitdimmed
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: true
+max_width: 800px
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: FrankJing420
+bilibili_id: 1075802443            # Bilibili 频道 UID
+gitlab_username:
+twitter_username:
+mastodon_username:
+linkedin_username:
+telegram_username:
+scholar_userid:                    # Google Scholar ID（有则填写）
+orcid_id:
+medium_username:
+instagram_id:
+facebook_id:
+youtube_id:
+discord_id:
+
+contact_note: >
+  欢迎通过邮件与我联系 / Feel free to email me!
+
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
+
+enable_google_analytics:  false
+enable_darkmode:          true    # 亮/暗模式切换
+enable_navbar_social:     false   # 导航栏不显示社交图标（About 页面显示）
+enable_project_categories: true
+enable_medium_zoom:       true
+enable_math:              true
+enable_progressbar:       true
+enable_tooltips:          false
+enable_masonry:           true
+
+# -----------------------------------------------------------------------------
+# Open Graph（社交预览卡片）
+# -----------------------------------------------------------------------------
+
+serve_og_meta: true
+serve_schema_org: false
+og_image:
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: Yuhan's Blog
+blog_nav_title: Blog
+blog_description: Notes on microscopy imaging and self-supervised learning
+permalink: /blog/:year/:title/
+
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 5
+
+# Giscus 评论系统（按需配置：https://giscus.app/）
+giscus:
+  repo:
+  repo_id:
+  category: Comments
+  category_id:
+  mapping: url
+  strict: 1
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  lang: zh-CN
+  loading: lazy
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+announcements:
+  enabled: false
+  scrollable: true
+  limit: 5
+
+latest_posts:
+  enabled: false
+  scrollable: true
+  limit: 3
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar（Publications 页面）
+# -----------------------------------------------------------------------------
+
+scholar:
+  last_name: [Jing]
+  first_name: [Yuhan, Y.]      # 自动加粗/高亮你的姓名
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+  group_by: none
+  group_order: descending
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: ["_pages"]
+exclude:
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor/
+
+keep_files:
+  - CNAME
+  - .nojekyll
+
+plugins:
+  - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-imagemagick
+  - jekyll-link-attrs
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-toc
+  - jemoji
+
+# -----------------------------------------------------------------------------
+# Jekyll Minifier
+# -----------------------------------------------------------------------------
+
+jekyll-minifier:
+  exclude: ["robots.txt"]
+  uglifier_args:
+    harmony: true
+
+# -----------------------------------------------------------------------------
+# Jekyll Archives
+# -----------------------------------------------------------------------------
+
+jekyll-archives:
+  enabled: [year, tags, categories]
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: "/blog/:year/"
+    tag: "/blog/tag/:name/"
+    category: "/blog/category/:name/"
+
+display_tags: []
+display_categories: []
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
