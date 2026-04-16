@@ -37,7 +37,7 @@ latest_posts:
   </button>
 </div>
 
-<div id="content-en">
+<div id="content-en" markdown="1">
 
 I am an undergraduate student at [Xi'an Jiaotong University](https://www.xjtu.edu.cn/).
 My research focuses on **low-count noise denoising in fluorescence microscopy imaging**,
@@ -61,7 +61,7 @@ states, towards more robust and interpretable denoising strategies.
 
 </div>
 
-<div id="content-zh" style="display:none;">
+<div id="content-zh" style="display:none;" markdown="1">
 
 我是西安交通大学的本科生。
 我的研究聚焦于**荧光显微成像中的低计数噪声去噪**，
