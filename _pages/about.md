@@ -2,33 +2,53 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+
+# 副标题：机构链接（替换为你的实际院系页面）
+subtitle: >
+  <a href="https://www.xau.edu.cn/" target="_blank">Xi'an University</a> &middot; 西安大学
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.jpg          # 放到 assets/img/prof_pic.jpg
+  image_circular: false        # true = 圆形头像
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:Frankjing420@163.com">Frankjing420@163.com</a>
+    </p>
+    <p>
+      <i class="fa-solid fa-location-dot"></i>
+      Xi'an, Shaanxi, China
+    </p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true          # 在首页显示代表性论文
+social: true                   # 在底部显示社交图标栏
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an undergraduate student at [Xi'an University](https://www.xau.edu.cn/) (西安大学).
+My research focuses on **low-count noise denoising in fluorescence microscopy imaging**,
+with particular interest in two-photon, confocal, and MINFLUX imaging scenarios.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research philosophy centers on combining **physics-based modeling with self-supervised learning**.
+I leverage the physical states, constraints, and redundancy inherent in imaging systems to guide
+algorithm design — alleviating the ill-posed recovery problem under single observations and
+improving reconstruction quality in low-count regimes.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Building on this foundation, I further explore **physics-aware agents and adaptive schedulers**
+that dynamically select temporal, spatial, or other redundancy sources based on current imaging
+states, towards more robust and interpretable denoising strategies.
+
+---
+
+**研究兴趣 / Research Interests**
+
+- 显微成像去噪（两光子、共聚焦、MINFLUX）
+- 自监督学习与物理建模结合
+- 低计数条件下的图像重建
+- 物理状态感知的自适应调度算法
