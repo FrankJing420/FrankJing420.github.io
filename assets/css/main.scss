@@ -7,18 +7,12 @@
 @use "sass:math";
 @use "sass:string";
 
-/* Configure your design tokens BEFORE loading any of your partials.
-   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
 @use "variables" with (
   $max-content-width: {{ site.max_width | default:  "930px" }}
 );
 
-/* Your project partials — convert these files to `@use "variables";`
-   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
 @use "themes";
 @use "layout";
-
-// Core styles organized by usage
 @use "typography";
 @use "navbar";
 @use "footer";
@@ -26,8 +20,6 @@
 @use "publications";
 @use "components";
 @use "utilities";
-
-// Other specialized styles
 @use "distill";
 @use "cv";
 @use "tabs";
@@ -38,13 +30,58 @@
 @use "font-awesome/solid";
 @use "font-awesome/regular";
 
-// Author self-highlight: underline instead of italic
+// ── Author self-highlight: underline instead of italic ──
 .author em {
   font-style: normal;
   text-decoration: underline;
 }
 
-// Navbar links uppercase
+// ── Navbar: uppercase + bold ──
 .navbar .nav-item a.nav-link {
   text-transform: uppercase;
+  font-weight: 700;
+}
+
+// ── Site name (Yuhan Jing): bold ──
+.navbar-brand.title {
+  font-weight: 700 !important;
+}
+.navbar-brand.title .font-weight-bold {
+  font-weight: 700 !important;
+}
+
+// ── Page titles (Publications, Projects, etc.): uppercase ──
+.post-header .post-title {
+  text-transform: uppercase;
+}
+
+// ── Ctrl+K search button: expand spacing so it does not look squished ──
+#search-toggle .nav-link {
+  letter-spacing: 0.06em;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+// ── Blog posts: bold headings + comfortable line spacing ──
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    line-height: 1.95;
+    margin-bottom: 1.1em;
+  }
+
+  li {
+    line-height: 1.85;
+    margin-bottom: 0.35em;
+  }
+
+  blockquote p {
+    line-height: 1.75;
+  }
 }
