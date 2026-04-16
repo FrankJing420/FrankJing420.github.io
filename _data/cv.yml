@@ -24,17 +24,17 @@ cv:
           - "**Key Courses:** Theoretical Mechanics (95), Linear Algebra & Analytic Geometry (96), University Physics (98), Mechanics of Materials (98)"
           - "**Honors:** Outstanding Student Cadre, Outstanding Class President — Xi'an Jiaotong University"
 
-    Research Experience:
-      - company: "Decoupling Numerical and Structural Parameters: An Empirical Study on Adaptive Genetic Algorithms via Deep Reinforcement Learning for the Large-Scale TSP"
-        position: "Second Author &nbsp;|&nbsp; WCCI/CEC 2026 (accepted)"
-        location: Xi'an Jiaotong University
+    Experience:
+      - company: "DRL + GA for Large-Scale TSP &nbsp;|&nbsp; <b>CEC 2026</b>"
+        position: "Second Author &nbsp;|&nbsp; Xi'an Jiaotong University"
+        location: Xi'an, China
         start_date: 2025-05
         end_date: 2026-02
         highlights:
-          - "Constructed a **Dual-Level DRLGA** control framework integrating Recurrent PPO and LSTM temporal modeling, achieving the mapping from non-Markovian evolutionary states to adaptive strategies."
-          - "Designed a numerical–structural parameter **decoupling and self-constraining logic**, enabling intelligent agents to dynamically coordinate Population Size and multi-mode operator switching (Mode Switching), accelerated via Numba JIT."
-          - "Achieved **Zero-Shot generalization** on TSPLIB real-world datasets (up to 5,915 nodes), resolving premature convergence in high-dimensional search spaces."
-          - "**45% reduction** in Optimality Gap on the largest instance (rl5915); optimality deviation compressed to the 0.9% range, demonstrating the decisive role of Structural Plasticity in automated algorithm design."
+          - "**Decoupling Numerical and Structural Parameters: An Empirical Study on Adaptive Genetic Algorithms via Deep Reinforcement Learning for the Large-Scale TSP**"
+          - "Hongyu Wang, <u>Yuhan Jing</u>, Yibing Shi, and 3 more authors"
+          - "In *IEEE World Congress on Computational Intelligence (WCCI), Congress on Evolutionary Computation (CEC)*, 2026"
+          - "Constructed a **Dual-Level DRLGA** framework with Recurrent PPO + LSTM; Zero-Shot generalization on TSPLIB (up to 5,915 nodes); **45% reduction** in Optimality Gap on rl5915."
 
       - company: "LLM-Based Intelligent Manufacturing Process Design — Prof. Zheng Shuai, XJTU"
         position: Research Assistant
