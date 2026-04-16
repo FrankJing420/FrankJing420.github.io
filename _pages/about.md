@@ -19,6 +19,12 @@ profile:
       <i class="fa-solid fa-location-dot"></i>
       Xi'an, Shaanxi, China
     </p>
+    <p>
+      <i class="fa-brands fa-bilibili"></i>
+      <a href="https://space.bilibili.com/1075802443" target="_blank">Bilibili</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://www.xiaohongshu.com/user/profile/669cbbc30000000024020068" target="_blank">小红书</a>
+    </p>
 
 selected_papers: true
 social: true
