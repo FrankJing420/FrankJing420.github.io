@@ -43,3 +43,8 @@
   font-style: normal;
   text-decoration: underline;
 }
+
+// Navbar links uppercase
+.navbar .nav-item a.nav-link {
+  text-transform: uppercase;
+}
