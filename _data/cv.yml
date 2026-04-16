@@ -45,6 +45,20 @@ cv:
           - "Built a **CAD redesign agent** leveraging RAG technology: automatically loads user-specified CAD drawings, retrieves drawing and process knowledge bases, and performs intelligent parsing and geometric parameter extraction (circles, rectangles, etc.)."
           - "Implemented automated parameter modification, CAD reconstruction, new design version generation, and parametric metadata updates — enabling fully automated incremental design data updating."
 
+    Publications:
+      - title: "Decoupling Numerical and Structural Parameters: An Empirical Study on Adaptive Genetic Algorithms via Deep Reinforcement Learning for the Large-Scale TSP"
+        authors:
+          - Wang, Hongyu
+          - <u>Jing, Yuhan</u>
+          - Shi, Yibing
+          - Zhou, Enjin
+          - Zhang, Haotian
+          - Shi, Jialong
+        publisher: "IEEE World Congress on Computational Intelligence (WCCI), Congress on Evolutionary Computation (CEC)"
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2603.20702
+        summary: "Proposes a dual-level deep reinforcement learning framework for adaptive genetic algorithms that decouples numerical and structural hyperparameters. Extensive experiments on large-scale TSP instances (up to 5,915 nodes) demonstrate 45% reduction in Optimality Gap, highlighting the importance of structural plasticity for evolutionary optimization."
+
     Awards:
       - title: National Mathematical Modeling Contest (高教社杯) — National Second Prize
         authors:
