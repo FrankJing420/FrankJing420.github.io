@@ -55,12 +55,10 @@
   text-transform: uppercase;
 }
 
-// ── Ctrl+K search button: expand spacing so it does not look squished ──
+// ── Search icon button: centered, no extra padding ──
 #search-toggle .nav-link {
-  letter-spacing: 0.06em;
-  word-spacing: 0.5em;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0 0.4rem;
 }
 
 // ── Blog posts: bold headings + comfortable line spacing ──
