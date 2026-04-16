@@ -528,6 +528,20 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=E3LUVdQAAAAJ", "_blank");
         },
       },{
+        id: 'social-bilibili_social',
+        title: 'Bilibili_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://space.bilibili.com/1075802443", "_blank");
+        },
+      },{
+        id: 'social-xiaohongshu_social',
+        title: 'Xiaohongshu_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.xiaohongshu.com/user/profile/669cbbc30000000024020068", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
