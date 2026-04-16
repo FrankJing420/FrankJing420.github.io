@@ -1,4 +1,4 @@
-﻿# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
 
@@ -94,7 +94,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 blog_name: Yuhan's Blog # blog_name will be displayed in your blog page
 blog_description: Notes on microscopy imaging and self-supervised learning
 permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+lsi: false
+future: true # produce an index for related posts
 
 # Pagination
 pagination:
