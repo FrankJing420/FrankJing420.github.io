@@ -72,7 +72,40 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-n2v",
+            },{id: "post-ted",
+        
+          title: "TED",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/TED/";
+          
+        },
+      },{id: "post-fast",
+        
+          title: "FAST",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/FAST/";
+          
+        },
+      },{id: "post-6neighbour-sampling-strategy",
+        
+          title: "6Neighbour_Sampling_Strategy",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/6Neighbour_Sampling_Strategy/";
+          
+        },
+      },{id: "post-n2v",
         
           title: "N2V",
         
