@@ -1,6 +1,7 @@
 name: Deploy site
 
-on:\n  workflow_dispatch:\n  push:
+on:
+  push:
     branches:
       - master
       - main
