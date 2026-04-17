@@ -3,8 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  <a href="https://www.xjtu.edu.cn/" target="_blank">Xi'an Jiaotong University</a>
-  &middot; 西安交通大学
+  <span class="subtitle-en"><a href="https://www.xjtu.edu.cn/" target="_blank">Xi'an Jiaotong University</a></span><span class="subtitle-zh" style="display:none;"><a href="https://www.xjtu.edu.cn/" target="_blank">西安交通大学</a></span>
 
 profile:
   align: right
@@ -29,13 +28,6 @@ announcements:
 latest_posts:
   enabled: false
 ---
-
-<div style="text-align:right; margin-bottom:1em;">
-  <button id="lang-btn" onclick="toggleLang()"
-    style="padding:3px 10px; border:1px solid #999; border-radius:4px; cursor:pointer; font-size:0.85em; background:transparent;">
-    中文
-  </button>
-</div>
 
 <div id="content-en" markdown="1">
 
@@ -63,40 +55,39 @@ states, towards more robust and interpretable denoising strategies.
 
 <div id="content-zh" style="display:none;" markdown="1">
 
-我目前是西安交通大学机械工程学院的本科生。
-我的研究聚焦于**荧光显微成像中的低计数噪声去噪**，
-尤其关注双光子、共聚焦和 MINFLUX 等成像场景。
+我目前是西安交通大学机械工程学院的本科生（越杰班）。
+我的研究聚焦于**荧光显微成像中的低光子数噪声去噪**，
+尤其关注双光子、共聚焦及 MINFLUX 等成像场景。
 
-我的研究思路是将**物理建模与自监督学习**相结合——
-利用成像系统内在的物理约束与数据冗余来指导算法设计，
-缓解单次观测下的病态重建问题，提升低计数条件下的图像质量。
+我的研究思路是将**物理建模与自监督学习**相结合，
+利用成像系统内在的物理状态、约束与冗余来指导算法设计，
+缓解单次观测下的不适定重建问题，提升低光子数条件下的图像质量。
 
-在此基础上，我进一步探索**物理状态感知的智能体与自适应调度算法**，
-根据当前成像状态动态选择时间、空间或其他冗余信息，
+在此基础上，我进一步探索**物理感知的自适应调度算法**，
+根据当前成像状态动态选择时间、空间或其他冗余信息来源，
 实现更鲁棒、更可解释的去噪策略。
 
-**研究兴趣**
+**研究方向**
 
-- 显微成像去噪（双光子、共聚焦、MINFLUX）
-- 自监督学习与物理建模结合
-- 低计数条件下的图像重建
-- 物理状态感知的自适应调度算法
+- 荧光显微镜去噪（双光子、共聚焦、MINFLUX）
+- 自监督学习与物理建模
+- 低光子数条件下的图像重建
+- 物理感知自适应调度算法
 
 </div>
 
 <script>
-function toggleLang() {
-  var en = document.getElementById('content-en');
-  var zh = document.getElementById('content-zh');
-  var btn = document.getElementById('lang-btn');
-  if (zh.style.display === 'none') {
-    zh.style.display = '';
-    en.style.display = 'none';
-    btn.textContent = 'EN';
-  } else {
-    en.style.display = '';
-    zh.style.display = 'none';
-    btn.textContent = '中文';
-  }
-}
+(function() {
+  var lang = localStorage.getItem('site_lang') || 'en';
+  window._applyLang = function(lang) {
+    var en = document.getElementById('content-en');
+    var zh = document.getElementById('content-zh');
+    document.querySelectorAll('.subtitle-en').forEach(function(el){ el.style.display = lang==='zh'?'none':''; });
+    document.querySelectorAll('.subtitle-zh').forEach(function(el){ el.style.display = lang==='zh'?'':'none'; });
+    if (en) en.style.display = lang==='zh' ? 'none' : '';
+    if (zh) zh.style.display = lang==='zh' ? '' : 'none';
+    document.querySelectorAll('.lang-toggle-btn').forEach(function(btn){ btn.textContent = lang==='zh'?'EN':'中文'; });
+  };
+  window._applyLang(lang);
+})();
 </script>
