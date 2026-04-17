@@ -30,19 +30,19 @@
 @use "font-awesome/solid";
 @use "font-awesome/regular";
 
-// ── Author self-highlight: underline instead of italic ──
+// Author self-highlight
 .author em {
   font-style: normal;
   text-decoration: underline;
 }
 
-// ── Navbar: uppercase + bold ──
+// Navbar: uppercase + bold
 .navbar .nav-item a.nav-link {
   text-transform: uppercase;
   font-weight: 700;
 }
 
-// ── Site name (Yuhan Jing): bold ──
+// Site name: bold
 .navbar-brand.title {
   font-weight: 700 !important;
 }
@@ -50,18 +50,41 @@
   font-weight: 700 !important;
 }
 
-// ── Page titles (Publications, Projects, etc.): uppercase ──
+// Page titles: uppercase
 .post-header .post-title {
   text-transform: uppercase;
 }
 
-// ── Search icon button: centered, no extra padding ──
+// Search icon: vertically centered
+#search-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
 #search-toggle .nav-link {
   font-size: 1.05rem;
   padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
 }
 
-// ── Blog posts: bold headings + comfortable line spacing ──
+// Language toggle button
+.lang-toggle-btn {
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.8em;
+  opacity: 0.7;
+  line-height: 1.4;
+  vertical-align: middle;
+  &:hover { opacity: 1; }
+}
+
+// Blog posts: bold headings + comfortable line spacing
 .post-content {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
